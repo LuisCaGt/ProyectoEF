@@ -48,7 +48,6 @@ public class REGISTRAROP extends javax.swing.JFrame {
         txtRol = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -102,9 +101,7 @@ public class REGISTRAROP extends javax.swing.JFrame {
 
         jLabel7.setText("1=Mantenimiento");
 
-        jLabel8.setText("2=Crear Nomina");
-
-        jLabel9.setText("3=Mostrar Nomina.");
+        jLabel8.setText("2=Buscar Empleado");
 
         jLabel10.setText("4=Administrador.");
 
@@ -134,7 +131,6 @@ public class REGISTRAROP extends javax.swing.JFrame {
                                 .addComponent(txtRol, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel9)
                                     .addComponent(jLabel8)
                                     .addComponent(jLabel7)
                                     .addComponent(jLabel10))))
@@ -176,10 +172,8 @@ public class REGISTRAROP extends javax.swing.JFrame {
                     .addComponent(txtRol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(30, 30, 30)
                 .addComponent(btnRegistrar)
                 .addContainerGap(56, Short.MAX_VALUE))
         );
@@ -293,7 +287,6 @@ public class REGISTRAROP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     public javax.swing.JPasswordField txtConfirmaPassword;
     public javax.swing.JTextField txtEmail;
     public javax.swing.JTextField txtNombre;
