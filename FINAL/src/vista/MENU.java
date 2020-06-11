@@ -14,6 +14,9 @@ import modelo.Usuarios;
 public class MENU extends javax.swing.JFrame {
 
     Usuarios mod;
+     private MantenimientoE mEmpleado;
+     private Dep mDep;
+      private Puesto mPuesto;
 
     public MENU() {
         initComponents();
@@ -63,8 +66,11 @@ public class MENU extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         FuncionUsuarioMantenimiento = new javax.swing.JMenuBar();
         MANTENIMIENTO = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         FUNCIONES = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         AYUDA = new javax.swing.JMenu();
         HERRAMIENTAS = new javax.swing.JMenu();
@@ -81,17 +87,42 @@ public class MENU extends javax.swing.JFrame {
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
+            .addGap(0, 412, Short.MAX_VALUE)
         );
 
         MANTENIMIENTO.setText("ABRIR");
+
+        jMenuItem1.setText("Mantenimiento Empleados");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        MANTENIMIENTO.add(jMenuItem1);
+
+        jMenuItem2.setText("Mantenimiento Puestos");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        MANTENIMIENTO.add(jMenuItem2);
+
+        jMenuItem3.setText("Mantenimiento Departamento");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        MANTENIMIENTO.add(jMenuItem3);
+
         FuncionUsuarioMantenimiento.add(MANTENIMIENTO);
 
-        jMenu1.setText("PROCESOS");
-        FuncionUsuarioMantenimiento.add(jMenu1);
-
-        FUNCIONES.setText("CATALOGOS");
+        FUNCIONES.setText("PROCESOS");
         FuncionUsuarioMantenimiento.add(FUNCIONES);
+
+        jMenu1.setText("CATALOGOS");
+        FuncionUsuarioMantenimiento.add(jMenu1);
 
         jMenu2.setText("INFORMES");
         FuncionUsuarioMantenimiento.add(jMenu2);
@@ -134,6 +165,25 @@ public class MENU extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();//Codigo  para  salir del Programa
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        mEmpleado = new MantenimientoE();
+        jDesktopPane1.add(mEmpleado);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+         mPuesto = new Puesto();
+        jDesktopPane1.add(mPuesto);
+        
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+                        mDep = new Dep();
+        jDesktopPane1.add(mDep);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -178,6 +228,9 @@ public class MENU extends javax.swing.JFrame {
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     // End of variables declaration//GEN-END:variables
 }
