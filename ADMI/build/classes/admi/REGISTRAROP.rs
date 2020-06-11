@@ -1,0 +1,5 @@
+registro.REGISTRAROP$3
+registro.REGISTRAROP$4
+registro.REGISTRAROP
+registro.REGISTRAROP$1
+registro.REGISTRAROP$2
