@@ -33,15 +33,13 @@ CREATE TABLE concepto (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /* */
 CREATE TABLE empleado (
-    codigo_empleado VARCHAR(5) auto_increment,
+    codigo_empleado VARCHAR(5),
     nombre_empleado VARCHAR(60),
     codigo_puesto VARCHAR(5),
     codigo_departamento VARCHAR(5),
     sueldo_empleado FLOAT(10,2),
     estatus_empleado VARCHAR(1),
-    PRIMARY KEY (codigo_empleado),
-    CONSTRAINT FK_puestoempleado FOREIGN KEY (codigo_puesto) REFERENCES puesto (codigo_puesto),
-    CONSTRAINT FK_departamentoempleado FOREIGN KEY (codigo_departamento) REFERENCES departamento (codigo_departamento)
+    PRIMARY KEY (codigo_empleado)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /* */
 CREATE TABLE nominaE (
