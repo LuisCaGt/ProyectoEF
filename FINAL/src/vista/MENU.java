@@ -17,6 +17,7 @@ public class MENU extends javax.swing.JFrame {
      private MantenimientoE mEmpleado;
      private Dep mDep;
       private Puesto mPuesto;
+      private buscarE pBuscar;
 
     public MENU() {
         initComponents();
@@ -43,14 +44,7 @@ public class MENU extends javax.swing.JFrame {
             AYUDA.setVisible(true);
             HERRAMIENTAS.setVisible(true);
         }
-          if (mod.getIdTipo() == 3) {
-            MANTENIMIENTO.setVisible(false);
-            FUNCIONES.setVisible(true);
-            SALIR.setVisible(true);
-            AYUDA.setVisible(true);
-            HERRAMIENTAS.setVisible(true);
-        }
-           if (mod.getIdTipo() < 1||mod.getIdTipo() > 3){
+           if (mod.getIdTipo() < 1||mod.getIdTipo() > 2){
             MANTENIMIENTO.setVisible(false);
             FUNCIONES.setVisible(false);
             SALIR.setVisible(true);
@@ -70,6 +64,7 @@ public class MENU extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         FUNCIONES = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         AYUDA = new javax.swing.JMenu();
@@ -119,6 +114,15 @@ public class MENU extends javax.swing.JFrame {
         FuncionUsuarioMantenimiento.add(MANTENIMIENTO);
 
         FUNCIONES.setText("PROCESOS");
+
+        jMenuItem5.setText("Buscar Empleado");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        FUNCIONES.add(jMenuItem5);
+
         FuncionUsuarioMantenimiento.add(FUNCIONES);
 
         jMenu1.setText("CATALOGOS");
@@ -185,6 +189,12 @@ public class MENU extends javax.swing.JFrame {
         jDesktopPane1.add(mDep);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        pBuscar = new buscarE();
+        jDesktopPane1.add(pBuscar);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -232,5 +242,6 @@ public class MENU extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     // End of variables declaration//GEN-END:variables
 }
