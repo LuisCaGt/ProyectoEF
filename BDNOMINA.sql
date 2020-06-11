@@ -33,7 +33,7 @@ CREATE TABLE concepto (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /* */
 CREATE TABLE empleado (
-    codigo_empleado VARCHAR(5),
+    codigo_empleado VARCHAR(5) auto_increment,
     nombre_empleado VARCHAR(60),
     codigo_puesto VARCHAR(5),
     codigo_departamento VARCHAR(5),
