@@ -13,7 +13,7 @@ import static vista.LOGINUSUARIO.frmLADMIN;
 
 /**
  *
- * @author leone
+ * @author carlos
  */
 public class LOGINADMIN extends javax.swing.JFrame {
 
