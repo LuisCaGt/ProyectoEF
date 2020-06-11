@@ -13,7 +13,7 @@ import modelo.Usuarios;
 
 /**
  *
- * @author leone
+ * @author carlos
  */
 public class LOGINUSUARIO extends javax.swing.JFrame {
 
